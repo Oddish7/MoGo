@@ -14,131 +14,77 @@
     background: #F9EFCF;
     opacity: 1;
 
-    &:nth-child(1)::before {
-        content: '01';
+    &::before {
+        content: '';
         position: relative;
         top: 25px;
-        right: 85px;
-        padding-right: 5px;
+
         font-weight: 700;
         font-size: 36px;
         text-transform: uppercase;
         color: #F9EFCF;
     }
-    
-    &:nth-child(1)::after{
-        content: 'intro';
+
+    &::after {
+        content: '';
         position: relative;
         top: 25px;
-        right: 85px;
+
         font-weight: 500;
         font-size: 18px;
         text-transform: uppercase;
         color: #F9EFCF;
     }
 
-    &:nth-child(2)::before {
-        content: '02';
-        position: relative;
-        top: 25px;
-        right: 85px;
-        padding-right: 5px;
-        font-weight: 700;
-        font-size: 36px;
-        text-transform: uppercase;
-        color: #F9EFCF;
+    &:nth-child(1)::before {
+        content: '01';
+        right: 87px;
     }
     
-    &:nth-child(2)::after{
-        content: 'work';
-        position: relative;
-        top: 25px;
+    &:nth-child(2)::before {
+        content: '02';
         right: 85px;
-        font-weight: 500;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #F9EFCF;
     }
 
     &:nth-child(3)::before {
         content: '03';
-        position: relative;
-        top: 25px;
-        right: 80px;
-        padding-right: 5px;
-        font-weight: 700;
-        font-size: 36px;
-        text-transform: uppercase;
-        color: #F9EFCF;
-    }
-    
-    &:nth-child(3)::after{
-        content: 'about';
-        position: relative;
-        top: 25px;
-        right: 80px;
-        font-weight: 500;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #F9EFCF;
+        right: 83px;
     }
 
     &:nth-child(4)::before {
         content: '04';
-        position: relative;
-        top: 25px;
-        right:60px;
-        padding-right: 5px;
-        font-weight: 700;
-        font-size: 36px;
-        text-transform: uppercase;
-        color: #F9EFCF;
+        right: 63px;
+    }
+
+    &:nth-child(1)::after {
+        content: 'intro';
+        right: 82px;
     }
     
-    &:nth-child(4)::after{
+    &:nth-child(2)::after {
+        content: 'work';
+        right: 80px;
+    }
+    
+    &:nth-child(3)::after {
+        content: 'about';
+        right: 78px;
+    }
+    
+    &:nth-child(4)::after {
         content: 'contacts';
-        position: relative;
-        top: 25px;
-        right: 60px;
-        font-weight: 500;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #F9EFCF;
+        right: 58px;
     }
 }
 
 .swiper-pagination-bullet-active {
     background: linear-gradient(to right, #F38281 30%, #FFF 30%, #FFF 70%);
 
-    &:nth-child(1)::before {
+    &::before {
         color: #FFF;
     }
 
-    &:nth-child(1)::after {
-        color: #FFF;
-    }
-    
-    &:nth-child(2)::before {
-        color: #FFF;
-    }
-
-    &:nth-child(2)::after {
-        color: #FFF;
-    }
-
-    &:nth-child(3)::before {
-        color: #FFF;
-    }
-
-    &:nth-child(3)::after {
-        color: #FFF;
-    }
-
-    &:nth-child(4)::before {
-        color: #FFF;
-    }
-
-    &:nth-child(4)::after {
+    &::after {
         color: #FFF;
     }
 }
