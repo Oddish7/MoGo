@@ -14,7 +14,7 @@
     background: #F9EFCF;
     opacity: 1;
 
-    &::before {
+    &:nth-child(1)::before {
         content: '01';
         position: relative;
         top: 25px;
@@ -25,12 +25,81 @@
         text-transform: uppercase;
         color: #F9EFCF;
     }
-
-    &::after{
+    
+    &:nth-child(1)::after{
         content: 'intro';
         position: relative;
         top: 25px;
         right: 85px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #F9EFCF;
+    }
+
+    &:nth-child(2)::before {
+        content: '02';
+        position: relative;
+        top: 25px;
+        right: 85px;
+        padding-right: 5px;
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #F9EFCF;
+    }
+    
+    &:nth-child(2)::after{
+        content: 'work';
+        position: relative;
+        top: 25px;
+        right: 85px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #F9EFCF;
+    }
+
+    &:nth-child(3)::before {
+        content: '03';
+        position: relative;
+        top: 25px;
+        right: 80px;
+        padding-right: 5px;
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #F9EFCF;
+    }
+    
+    &:nth-child(3)::after{
+        content: 'about';
+        position: relative;
+        top: 25px;
+        right: 80px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #F9EFCF;
+    }
+
+    &:nth-child(4)::before {
+        content: '04';
+        position: relative;
+        top: 25px;
+        right:60px;
+        padding-right: 5px;
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #F9EFCF;
+    }
+    
+    &:nth-child(4)::after{
+        content: 'contacts';
+        position: relative;
+        top: 25px;
+        right: 60px;
         font-weight: 500;
         font-size: 18px;
         text-transform: uppercase;
@@ -41,11 +110,35 @@
 .swiper-pagination-bullet-active {
     background: linear-gradient(to right, #F38281 30%, #FFF 30%, #FFF 70%);
 
-    &::before {
+    &:nth-child(1)::before {
         color: #FFF;
     }
 
-    &::after {
+    &:nth-child(1)::after {
+        color: #FFF;
+    }
+    
+    &:nth-child(2)::before {
+        color: #FFF;
+    }
+
+    &:nth-child(2)::after {
+        color: #FFF;
+    }
+
+    &:nth-child(3)::before {
+        color: #FFF;
+    }
+
+    &:nth-child(3)::after {
+        color: #FFF;
+    }
+
+    &:nth-child(4)::before {
+        color: #FFF;
+    }
+
+    &:nth-child(4)::after {
         color: #FFF;
     }
 }
