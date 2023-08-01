@@ -1,0 +1,21 @@
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+.nav__item {
+    min-width: 85px;
+    min-height: 25px;
+
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+
+    &:active {
+        color: #F4BF87;
+        border-bottom: 1px solid #F4BF87;
+    }
+}
