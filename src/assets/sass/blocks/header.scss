@@ -1,7 +1,6 @@
 .header {
     position: relative;
 
-    min-width: 0;
     min-height: 1024px;
 
     background: linear-gradient(360deg, rgba(237, 215, 137, 0.90) 0%, rgba(233, 130, 131, 0.90) 100%)
@@ -32,10 +31,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 1024px;
 }
 
-.header__content-title {
+.header__content-subtitle {
     margin-top: 177px;
 
     font-family: 'Kaushan Script', sans-serif;
@@ -45,7 +43,7 @@
     color: #FFF;
 }
 
-.header__content-subtitle {
+.header__content-title {
     max-width: 1056px;
 
     font-family: 'Montserrat', sans-serif;
@@ -59,7 +57,7 @@
 .header__content-separator {
     min-width: 170px;
     margin-top: 44px;
-    outline: 4px solid #FFF;
+    border: 2px solid #FFF;
 }
 
 .header__content-button {

@@ -1,0 +1,23 @@
+.devices {
+    min-height: 868px;
+    padding-top: 42px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.80)), url('../images/devices/devices-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.devices__tablet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 494px;
+    margin-top: 77px;
+    background-image: url('../images/devices/tablet.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: url('../images/devices/tablet-border.png');
+    }
+}

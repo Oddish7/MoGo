@@ -1,0 +1,31 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #95E1D3;
+}
+
+.features__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 234px;
+    min-height: 250px;
+    border-right: 1px solid #FFF;
+
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFF;
+
+    &--border-left {
+        border-left: 1px solid #FFF;
+    }
+
+    & span {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 64px;
+        color: #FFF;
+    }
+}

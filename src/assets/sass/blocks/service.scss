@@ -1,0 +1,37 @@
+.services {
+    max-width: 1510px;
+    margin: 0 auto;
+    padding: 42px 170px 91px;
+}
+
+.services__separator {
+    margin-bottom: 80px;
+}
+
+.services__cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 140px 30px;
+}
+
+.services__card {
+    display: grid;
+    grid-template-columns: 100px 260px;
+    grid-template-rows: 57px 80px;
+    align-items: center;
+}
+
+.services__card-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2D3033;
+
+}
+
+.services__card-text {
+    grid-column: 2;
+    font-size: 18px;
+    color: #2D3033;
+}
