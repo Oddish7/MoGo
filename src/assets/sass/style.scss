@@ -15,6 +15,45 @@
 @import './blocks/devices.scss';
 @import './blocks/make.scss';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+}
+
+.subtitle {
+    margin-top: 18px;
+
+    font-family: 'Kaushan Script', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #2D3033;
+}
+
+.title {
+    margin-top: 38px;
+
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.line {
+    margin: 44px auto 0;
+    max-width: 170px;
+    min-height: 4px;
+    background-color: #F38281;
+}
+
+.text {
+    max-width: 1170px;
+    margin: 38px auto 96px;
+
+    font-size: 18px;
+    text-align: center;
 }
