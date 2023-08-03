@@ -61,7 +61,9 @@
 
 .make__accordion-text {
     display: none;
+    overflow-y: scroll;
 
+    max-height: 139px;
     padding: 24px 22px;
     border-top: 1px solid #C6CBCD;
 
