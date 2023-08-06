@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/sass/style.scss">
+    <link rel="stylesheet" href="./assets/scss/style.scss">
     <title>MoGo</title>
 </head>
 <body>
     <header class="header">
         <div class="header__top">
-        <img class="header__top-logo" src="./assets/images/header/logo.svg" alt="picture">
+            <img class="header__top-logo" src="./assets/images/header/logo.svg" alt="picture">
             <nav class="nav">
                 <ul class="nav__list">
-                    <a class="nav__link" href="#"><li class="nav__item">About</li></a>
-                    <a class="nav__link" href="#"><li class="nav__item">service</li></a>
-                    <a class="nav__link" href="#"><li class="nav__item">work</li></a>
-                    <a class="nav__link" href="#"><li class="nav__item">blog</li></a>
-                    <a class="nav__link" href="#"><li class="nav__item">Contact</li></a>
+                    <a class="nav__link" href="#">
+                        <li class="nav__item">About</li>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <li class="nav__item">service</li>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <li class="nav__item">work</li>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <li class="nav__item">blog</li>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <li class="nav__item">Contact</li>
+                    </a>
                 </ul>
             </nav>
             <div class="header__top-buttons">
-                <button class="header__top-button" ><img class="header__top-cart" src="./assets/images/header/cart.svg" alt="picture"></button>
-                <button class="header__top-button" ><img class="header__top-search" src="./assets/images/header/search.svg" alt="picture"></button>
+                <button class="header__top-button"><img class="header__top-cart" src="./assets/images/header/cart.svg" alt="picture"></button>
+                <button class="header__top-button"><img class="header__top-search" src="./assets/images/header/search.svg" alt="picture"></button>
             </div>
         </div>
         <div class="swiper">
@@ -55,11 +65,12 @@
             </div>
         </section>
         <section class="features">
-                <div class="features__card features__card--border-left"><span>42</span>Lorem ipsum</p></div>
-                <div class="features__card"><span>123</span><p>Lorem ipsum</p></div>
-                <div class="features__card"><span>15</span><p>Lorem ipsum</p></div>
-                <div class="features__card"><span>99</span><p>Lorem ipsum</p></div>
-                <div class="features__card"><span>24</span><p>Lorem ipsum</p></div>
+            <div class="features__card features__card--border-left"><span>42</span>Lorem ipsum</p>
+            </div>
+            <div class="features__card"><span>123</span><p>Lorem ipsum</p></div>
+            <div class="features__card"><span>15</span><p>Lorem ipsum</p></div>
+            <div class="features__card"><span>99</span><p>Lorem ipsum</p></div>
+            <div class="features__card"><span>24</span><p>Lorem ipsum</p></div>
         </section>
         <section class="services">
             <h3 class="services__subtitle subtitle">We worck with</h3>
@@ -67,77 +78,136 @@
             <div class="services__separator line"></div>
             <div class="services__cards-container">
                 <div class="services__card">
-                    <img class="services__card-svg" src="./assets/images/services/mushroom.svg" alt="picture">
+                    <img class="services__card-svg" src="./assets/images/services-section/mushroom.svg" alt="picture">
                     <h2 class="services__card-title">photography</h2>
                     <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="services__card">
-                    <img class="services__card-svg" src="./assets/images/services/window.svg" alt="picture">
+                    <img class="services__card-svg" src="./assets/images/services-section/window.svg" alt="picture">
                     <h2 class="services__card-title">web design</h2>
                     <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="services__card">
-                    <img class="services__card-svg" src="./assets/images/services/sword.svg" alt="picture">
+                    <img class="services__card-svg" src="./assets/images/services-section/sword.svg" alt="picture">
                     <h2 class="services__card-title">creativity</h2>
                     <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="services__card">
-                    <img class="services__card-svg" src="./assets/images/services/map.svg" alt="picture">
+                    <img class="services__card-svg" src="./assets/images/services-section/map.svg" alt="picture">
                     <h2 class="services__card-title">seo</h2>
                     <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="services__card">
-                    <img class="services__card-svg" src="./assets/images/services/mountain.svg" alt="picture">
+                    <img class="services__card-svg" src="./assets/images/services-section/mountain.svg" alt="picture">
                     <h2 class="services__card-title">css/html</h2>
                     <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="services__card">
-                    <img class="services__card-svg" src="./assets/images/services/aim.svg" alt="picture">
+                    <img class="services__card-svg" src="./assets/images/services-section/aim.svg" alt="picture">
                     <h2 class="services__card-title">digital</h2>
                     <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </section>
         <section class="devices">
-            <h3 class="devices__subtitle subtitle">For all  devices</h3>
-            <h2 class="devices__title title">unique design</h2>
-            <div class="devices__separator line"></div>
-            <div class="devices__tablet"></div>
+            <div class="container position-relative">
+                <h3 class="devices__subtitle subtitle">For all devices</h3>
+                <h2 class="devices__title title">unique design</h2>
+                <div class="devices__separator line"></div>
+                <img class="devices__content" src="./assets/images/devices-section/devices.png" alt="picture">
+            </div>
         </section>
         <section class="make">
             <h3 class="make__subtitle subtitle">Service</h3>
             <h2 class="make__title title">what we do</h2>
             <div class="make__separator line"></div>
             <p class="make__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
-            <div class="make__conteiner">
-                <img class="make__picture" src="./assets/images/make/man.png" alt="picture">
+            <div class="container d-flex justify-content-center column-gap-4">
+                <img class="make__picture" src="./assets/images/make-section/man.png" alt="picture">
                 <div class="make__accordion">
                     <div class="make__accordion-item">
                         <input class="make__accordion-input" type="radio" id="accordion-1" name="accordion" checked>
-                        <label class="make__accordion-title" for="accordion-1"><img src="./assets/images/make/glasses.svg" alt="picture"><p>photography</p></label>
+                        <label class="make__accordion-title" for="accordion-1"><img src="./assets/images/make-section/glasses.svg" alt="picture"><p>photography</p></label>
                         <div class="make__accordion-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                            </p>
                         </div>
                     </div>
                     <div class="make__accordion-item">
                         <input class="make__accordion-input" type="radio" id="accordion-2" name="accordion">
-                        <label class="make__accordion-title" for="accordion-2"><img src="./assets/images/make/aim.svg" alt="picture"><p>creativity</p></label>
+                        <label class="make__accordion-title" for="accordion-2"><img src="./assets/images/make-section/aim.svg" alt="picture"><p>creativity</p></label>
                         <div class="make__accordion-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                            </p>
                         </div>
                     </div>
                     <div class="make__accordion-item">
                         <input class="make__accordion-input" type="radio" id="accordion-3" name="accordion">
-                        <label class="make__accordion-title" for="accordion-3"><img src="./assets/images/make/gear.svg" alt="picture"><p>web design</p></label>
+                        <label class="make__accordion-title" for="accordion-3"><img src="./assets/images/make-section/gear.svg" alt="picture"><p>web design</p></label>
                         <div class="make__accordion-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean. 
+                            </p>
                         </div>
                     </div>
+                </div>
+        </section>
+        <section class="reviews-1">
+            <div class="reviews-1__container container">
+                <div class="reviews-1__carousel carousel slide" id="carouselExample">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel__content container">
+                                <img class="carousel__picture" src="./assets/images/reviews-1-section/message.png" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator"></div>
+                                        <h3 class="carousel__name">Jon Doe</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel__content container">
+                                <img class="carousel__picture" src="./assets/images/reviews-1-section/message.png" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator"></div>
+                                        <h3 class="carousel__name">Pierre Dunn</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel__content container">
+                                <img class="carousel__picture" src="./assets/images/reviews-1-section/message.png" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator"></div>
+                                        <h3 class="carousel__name">Big Mac</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>

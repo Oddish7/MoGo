@@ -1,6 +1,14 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap');
 
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
+
 // Reset
 @import './reset.scss';
 
@@ -9,11 +17,13 @@
 @import './blocks/nav.scss';
 @import './blocks/slider.scss';
 @import './blocks/pagination.scss';
-@import './blocks/about.scss';
-@import './blocks/features.scss';
-@import './blocks/service.scss';
-@import './blocks/devices.scss';
-@import './blocks/make.scss';
+@import './blocks/about-section.scss';
+@import './blocks/features-section.scss';
+@import './blocks/service-section.scss';
+@import './blocks/devices-section.scss';
+@import './blocks/make-section.scss';
+@import './blocks/reviews-1-section.scss';
+
 
 html {
     scroll-behavior: smooth;
@@ -21,6 +31,12 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
+}
+
+p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, ol, ul, li {
+    padding: 0;
+    margin: 0;
+    line-height: normal;
 }
 
 .subtitle {
