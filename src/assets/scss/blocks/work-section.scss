@@ -1,0 +1,92 @@
+.work {
+    padding-top: 84px;
+}
+
+.work__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: flex-start;
+    margin: 0 auto 84px;
+}
+
+.work__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.90) 0%, rgba(233, 130, 131, 0.90) 100%);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.work__overlay-title {
+    margin-top: 57px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.work__overlay-text {
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.work__picture {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 378px;
+
+    &:nth-child(1){
+        background-image: url('../images/work-section/girl.png');
+    }
+
+    &:nth-child(2){
+        background-image: url('../images/work-section/pyramid.png');
+    }
+
+    &:nth-child(3){
+        background-image: url('../images/work-section/canyon.png');
+    }
+
+    &:nth-child(4){
+        background-image: url('../images/work-section/school.png');
+    }
+
+    &:nth-child(5){
+        background-image: url('../images/work-section/windows.png');
+    }
+
+    &:nth-child(6){
+        background-image: url('../images/work-section/shelves.png');
+    }
+
+    &:nth-child(7){
+        background-image: url('../images/work-section/bench.png');
+    }
+    
+    &:hover ~ .work__overlay {
+        opacity: 1;
+    }
+}
+
+
+.work__picture--size {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}

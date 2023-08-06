@@ -23,7 +23,9 @@ $prefix: "mo-";
 @import './blocks/devices-section.scss';
 @import './blocks/make-section.scss';
 @import './blocks/reviews-1-section.scss';
-
+@import './blocks/team-section.scss';
+@import './blocks/partners-section.scss';
+@import './blocks/work-section.scss';
 
 html {
     scroll-behavior: smooth;
