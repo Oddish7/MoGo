@@ -1,0 +1,65 @@
+.clients {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('../images/clients-section/clients-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clients__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1510px;
+    margin: 62px auto 0;
+    gap: 42px 51px;
+}
+
+.clients__card {
+    position: relative;
+    display: flex;
+
+    &:nth-child(1):before {
+        content: url('../images/clients-section/client-1.svg');
+        margin-right: 50px;
+    }
+
+    &:nth-child(2):before {
+        content: url('../images/clients-section/client-2.svg');
+        margin-right: 50px;
+    }
+
+    &:nth-child(3):before {
+        content: url('../images/clients-section/client-3.svg');
+        margin-right: 50px;
+    }
+
+    &:nth-child(4):before {
+        content: url('../images/clients-section/client-4.svg');
+        margin-right: 50px;
+    }
+}
+
+.clients__card-name {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.clients__card-job {
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.clients__card-separator {
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+.clients__card-text {
+    max-width: 329px;
+    color: #2D3033;
+}

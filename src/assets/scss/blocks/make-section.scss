@@ -72,8 +72,8 @@
 
     opacity: 0;
     height: 0;
-    transition: opacity, height .3s;
     border-top: 1px solid #C6CBCD;
+    transition: opacity, height 0.2s;
 
     & p {
         max-width: 463px;

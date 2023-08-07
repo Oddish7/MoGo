@@ -26,6 +26,11 @@ $prefix: "mo-";
 @import './blocks/team-section.scss';
 @import './blocks/partners-section.scss';
 @import './blocks/work-section.scss';
+@import './blocks/reviews-2-section.scss';
+@import './blocks/clients-section.scss';
+@import './blocks/blog-section.scss';
+@import './blocks/map-section.scss';
+@import './blocks/footer.scss';
 
 html {
     scroll-behavior: smooth;
@@ -66,6 +71,13 @@ p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, ol, ul, li {
     max-width: 170px;
     min-height: 4px;
     background-color: #F38281;
+}
+
+.small-line {
+    width: 70px;
+    height: 4px;
+    margin-right: 56px;
+    background:  #F38281;
 }
 
 .text {

@@ -1,0 +1,22 @@
+.map {
+    padding: 42px 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('../images/map-section/map-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.map__title {
+    margin-top: 38px;
+
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F38281;
+}

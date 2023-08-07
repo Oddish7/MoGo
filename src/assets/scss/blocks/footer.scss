@@ -1,0 +1,168 @@
+footer {
+    padding-top: 78px;
+    background-color: #F8F8F8;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mogo-box {
+    max-width: 370px;
+}
+
+.mogo-box__text {
+    max-width: 329px;
+    margin-top: 49px;
+    color: #C6CBCD;
+}
+
+.mogo-box__followers {
+    margin-top: 45px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #2D3033;
+
+    & span:nth-child(1) {
+        font-size: 18px;
+    }
+
+    & span:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+.mogo-box__separator {
+    margin-top: 22px;
+    max-width: 370px;
+    min-height: 1px;
+    background-color: #C6CBCD;
+}
+
+.mogo-box__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    &::before {
+        content: 'Follow Us';
+        margin-right: 15px;
+        font-size: 13px;
+        font-style: italic;
+        color: #C6CBCD;
+    }
+}
+
+.mogo-box__email {
+    min-width: 234px;
+    min-height: 55px;
+    margin-top: 46px;
+    border: 1px solid #C6CBCD;
+    background-color: #FFF;
+    text-align: center;
+    color: #C6CBCD;
+}
+
+::placeholder {
+    color: #C6CBCD;
+}
+
+.mogo-box__submit {
+    min-width: 130px;
+    min-height: 55px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+input[type=submit] {
+    background-color: #95E1D3;
+}
+
+.blogs-box {
+    max-width: 470px;
+}
+
+.blogs-box__title {
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.blogs-box__content {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.blog-box__card {
+    display: flex;
+    gap: 30px;
+}
+
+.blog-box__card__text {
+    max-width: 246px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.blog-box__card__date {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #2D3033;
+}
+
+.instagram-box {
+    max-width: 270px;
+}
+
+.instagram-box__title {
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.instagram-box__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 38px;
+}
+
+.instagram-box__link {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    color: #2D3033;
+    border-bottom: 1px solid #2D3033;
+}
+
+.footer__copyright-separator {
+    max-width: 1140px;
+    min-height: 1px;
+    margin-top: 42px;
+    background-color: #C6CBCD;
+    margin: 32px auto 22px;
+}
+
+.footer__copyright-text {
+    padding-bottom: 22px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D3033;
+}
