@@ -1,3 +1,7 @@
 .reviews-2 {
-    padding-bottom: 84px;
+    padding-bottom: 126px;
+
+    @media (max-width: 1024px) {
+        padding-bottom: 86px;
+    }
 }

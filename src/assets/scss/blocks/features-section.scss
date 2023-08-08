@@ -18,6 +18,12 @@
     font-size: 24px;
     color: #FFF;
 
+    @media (max-width: 1188px) {
+        min-width: 198px;
+        min-height: 166px;
+        font-size: 18px;
+    }
+
     &--border-left {
         border-left: 1px solid #FFF;
     }
@@ -27,5 +33,10 @@
         font-weight: 700;
         font-size: 64px;
         color: #FFF;
+
+        @media (max-width: 1188px) {
+            margin-bottom: 10px;
+            font-size: 48px;
+        }
     }
 }

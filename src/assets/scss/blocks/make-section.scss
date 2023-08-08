@@ -1,35 +1,69 @@
 .make {
-    padding: 42px 0 59px;
+    padding: 42px 16px 49px;
 
-    & .container {
-        min-height: 545px;
+    @media (max-width: 1024px) {
+        padding: 86px 16px 0;
+    }
+}
+
+.make__container {
+    display: flex;
+    justify-content: center;
+    min-height: 545px;
+    gap: 30px;
+
+    @media (max-width: 1024px) {
+        min-height: 500px;
+        gap: 20px;
     }
 }
 
 .make__picture {
     max-height: 483px;
+
+    @media (max-width: 1024px) {
+        max-width: 486px;
+        max-height: 411px;
+    }
 }
 
 .make__accordion {
     display: flex;
     flex-direction: column;
     max-width: 570px;
+
+    @media (max-width: 1024px) {
+        max-width: 486px;
+    }
 }
 
 .make__accordion-item {
     margin-bottom: 22px;
     border: 1px solid #C6CBCD;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 19px;
+    }
+
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+.make__accordion-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 1024px) {
+        gap: 34px;
     }
 }
 
 .make__accordion-title {
     display: flex;
     align-items: center;
-    min-width: 570px;
-    gap: 40px;
+    justify-content: space-between;
     padding: 26px 18px;
     cursor: pointer;
 
@@ -38,15 +72,23 @@
     text-transform: uppercase;
     color: #2D3033;
 
+    @media (max-width: 1024px) {
+        padding: 19px 15px;
+        font-size: 18px;
+    }
+
     &::after {
         content: url('../images/make-section/arrow-down.svg');
+        display: flex;
+        justify-content: center;
         max-width: 42px;
         max-height: 42px;
         transition: transform .3s;
-    }
-
-    & p {
-        min-width: 370px;
+        
+        @media (max-width: 1024px) {
+            max-width: 36px;
+            max-height: 36px;
+        }
     }
 }
 
@@ -60,6 +102,10 @@
         opacity: 1;
         height: 149px;
         padding: 15px 22px;
+
+        @media (max-width: 1024px) {
+            height: 139px;
+        }
     }
 
     &:checked ~ .make__accordion-title::after {
@@ -73,7 +119,12 @@
     opacity: 0;
     height: 0;
     border-top: 1px solid #C6CBCD;
+    color: #2D3033;
     transition: opacity, height 0.2s;
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    }
 
     & p {
         max-width: 463px;

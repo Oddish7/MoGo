@@ -4,11 +4,22 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+        padding: 29px 0;
+    }
 }
 
 .map__icon {
     display: flex;
     justify-content: center;
+
+    & img {
+        @media (max-width: 1024px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
 }
 
 .map__title {
@@ -19,4 +30,13 @@
     text-align: center;
     text-transform: uppercase;
     color: #F38281;
+
+    @media (max-width: 1024px) {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+}
+
+.map__separator {
+    margin-top: 25px !important;
 }

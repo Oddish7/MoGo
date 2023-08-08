@@ -1,6 +1,9 @@
 .team {
-    padding-top: 84px;
-    padding-bottom: 84px;
+    padding: 84px 16px;
+
+    @media (max-width: 1024px) {
+        padding: 58px 16px;
+    }
 }
 
 .team__container {
@@ -8,6 +11,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @media (max-width: 1218px) {
+        gap: 20px;
+    }
 }
 
 .team__card {
@@ -21,6 +28,7 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
     opacity: 0;
     min-width: 370px;
     min-height: 424px;
@@ -29,30 +37,60 @@
     cursor: pointer;
     transition: .5s;
 
+    @media (max-width: 1218px) {
+        min-width: 311px;
+        min-height: 355px;
+    }
+
     &:hover {
         opacity: 1;
         top: -16px;
         left: -16px;
+
+        @media (max-width: 1218px) {
+            top: -4px;
+            left: -4px;
+        }
+    }
+}
+
+.team__card-social-button {
+    @media (max-width: 1218px) {
+        width: 35px;
+        height: 35px;
     }
 }
 
 .team__card-picture {
-    min-width: 370px;
-    min-height: 424px;
+    width: 370px;
+    height: 424px;
+
+    @media (max-width: 1218px) {
+        width: 311px;
+        height: 355px;
+    }
 }
 
 .team__card-name {
-    margin-top: 25px;
+    margin-top: 15px;
     font-weight: 700;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1218px) {
+        font-size: 18px;
+    }
 }
 
 .team__card-job {
-    margin-top: 35px;
+    margin-top: 15px;
     text-transform: uppercase;
     text-align: center;
     color: #2D3033;
+
+    @media (max-width: 1218px) {
+        font-size: 14px;
+    }
 }

@@ -5,6 +5,17 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+        min-height: 620px;
+        padding-top: 28px;
+    }
+}
+
+.devices__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .devices__separator {
@@ -13,6 +24,13 @@
 
 .devices__content {
     position: absolute;
-    top: 225px;
-    left: 65px;
+    top: 59px;
+    max-width: 1170px;
+    max-height: 624px;
+
+    @media (max-width: 1024px) {
+        top: 40px;
+        max-width: 800px;
+        max-height: 423px;
+    }
 }

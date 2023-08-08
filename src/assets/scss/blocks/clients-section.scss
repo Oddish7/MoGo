@@ -1,10 +1,13 @@
 .clients {
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding: 42px 16px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('../images/clients-section/clients-bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+        padding: 28px 16px;
+    }
 }
 
 .clients__container {
@@ -23,21 +26,37 @@
     &:nth-child(1):before {
         content: url('../images/clients-section/client-1.svg');
         margin-right: 50px;
+
+        @media (max-width: 1199px) {
+            content: url('../images/clients-section/client-1-small.svg');
+        }
     }
 
     &:nth-child(2):before {
         content: url('../images/clients-section/client-2.svg');
         margin-right: 50px;
+
+        @media (max-width: 1199px) {
+            content: url('../images/clients-section/client-2-small.svg');
+        }
     }
 
     &:nth-child(3):before {
         content: url('../images/clients-section/client-3.svg');
         margin-right: 50px;
+
+        @media (max-width: 1199px) {
+            content: url('../images/clients-section/client-3-small.svg');
+        }
     }
 
     &:nth-child(4):before {
         content: url('../images/clients-section/client-4.svg');
         margin-right: 50px;
+
+        @media (max-width: 1199px) {
+            content: url('../images/clients-section/client-4-small.svg');
+        }
     }
 }
 
@@ -46,20 +65,39 @@
     font-size: 24px;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
 }
 
 .clients__card-job {
     margin-top: 10px;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1199px) {
+        margin-top: 5px;
+        font-size: 14px;
+    }
 }
 
 .clients__card-separator {
     margin-top: 32px;
     margin-bottom: 60px;
+
+    @media (max-width: 1199px) {
+        margin-top: 22px;
+        margin-bottom: 42px;
+    }
 }
 
 .clients__card-text {
     max-width: 329px;
     color: #2D3033;
+
+    @media (max-width: 1199px) {
+        max-width: 316px;
+        font-size: 14px;
+    }
 }

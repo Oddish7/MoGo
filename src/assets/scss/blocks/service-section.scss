@@ -1,7 +1,11 @@
 .services {
     max-width: 1510px;
     margin: 0 auto;
-    padding: 42px 170px 91px;
+    padding: 42px 0 91px;
+
+    @media (max-width: 1024px) {
+        padding: 29px 0 58px;
+    }
 }
 
 .services__separator {
@@ -14,6 +18,11 @@
     justify-content: center;
     margin-top: 80px;
     gap: 140px 30px;
+
+    @media (max-width: 1156px) {
+        margin-top: 68px;
+        gap: 58px 25px;
+    }
 }
 
 .services__card {
@@ -21,6 +30,11 @@
     grid-template-columns: 100px 260px;
     grid-template-rows: 57px 80px;
     align-items: center;
+
+    @media (max-width: 1156px) {
+        grid-template-columns: 85px 230px;
+        grid-template-rows: 57px 68px;
+    }
 }
 
 .services__card-title {
@@ -29,10 +43,17 @@
     text-transform: uppercase;
     color: #2D3033;
 
+    @media (max-width: 1156px) {
+        font-size: 18px;
+    }
 }
 
 .services__card-text {
     grid-column: 2;
     font-size: 18px;
     color: #2D3033;
+
+    @media (max-width: 1156px) {
+        font-size: 14px;
+    }
 }

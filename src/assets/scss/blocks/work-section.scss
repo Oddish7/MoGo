@@ -1,5 +1,11 @@
 .work {
     padding-top: 84px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1024px) {
+        padding-top: 58px;
+        padding-bottom: 0;
+    }
 }
 
 .work__container {
@@ -8,6 +14,11 @@
     grid-template-columns: repeat(4, 1fr);
     justify-content: flex-start;
     margin: 0 auto 84px;
+}
+
+.work__text {
+    max-width: 820px !important;
+    margin-bottom: 50px !important;
 }
 
 .work__overlay {
@@ -28,17 +39,34 @@
     }
 }
 
+.work__overlay-icon {
+    @media (max-width: 1250px) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
 .work__overlay-title {
     margin-top: 57px;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
     color: #FFF;
+
+    @media (max-width: 1250px) {
+        margin-top: 47px;
+        font-size: 18px;
+    }
 }
 
 .work__overlay-text {
     margin-top: 20px;
     color: #FFF;
+
+    @media (max-width: 1250px) {
+        margin-top: 10px;
+        font-size: 14px;
+    }
 }
 
 .work__picture {
@@ -48,8 +76,16 @@
     background-repeat: no-repeat;
     min-height: 378px;
 
+    @media (max-width: 1250px) {
+        min-height: 256px;
+    }
+
     &:nth-child(1){
         background-image: url('../images/work-section/girl.png');
+
+        @media (max-width: 1250px) {
+        min-height: 256px;
+    }
     }
 
     &:nth-child(2){
@@ -83,8 +119,8 @@
 
 
 .work__picture--size {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .grid-row-span-2 {

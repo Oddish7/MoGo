@@ -1,6 +1,10 @@
 footer {
-    padding-top: 78px;
+    padding: 78px 16px 0;
     background-color: #F8F8F8;
+
+    @media (max-width: 1024px) {
+        padding-top: 28px 16px 0;
+    }
 }
 
 .footer__container {
@@ -8,16 +12,38 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @media (max-width: 1188px) {
+        gap: 20px;
+    }
 }
+
+// Mogo
 
 .mogo-box {
     max-width: 370px;
+
+    @media (max-width: 1188px) {
+        max-width: 317px;
+    }
+}
+
+.mogo-box__logo {
+    @media (max-width: 1188px) {
+        width: 100px;
+        height: 26px;
+    }
 }
 
 .mogo-box__text {
     max-width: 329px;
     margin-top: 49px;
     color: #C6CBCD;
+
+    @media (max-width: 1188px) {
+        margin-top: 34px;
+        font-size: 14px;
+    }
 }
 
 .mogo-box__followers {
@@ -28,14 +54,27 @@ footer {
     text-transform: uppercase;
     color: #2D3033;
 
+    @media (max-width: 1188px) {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+
     & span:nth-child(1) {
         font-size: 18px;
+
+        @media (max-width: 1188px) {
+            font-size: 14px;
+        }
     }
 
     & span:nth-child(2) {
         font-weight: 400;
         font-size: 18px;
         font-style: italic;
+
+        @media (max-width: 1188px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -44,6 +83,10 @@ footer {
     max-width: 370px;
     min-height: 1px;
     background-color: #C6CBCD;
+
+    @media (max-width: 1188px) {
+        margin-top: 10px;
+    }
 }
 
 .mogo-box__socials {
@@ -52,23 +95,47 @@ footer {
     gap: 10px;
     margin-top: 10px;
 
+    @media (max-width: 1188px) {
+        margin-top: 7px;
+    }
+
     &::before {
         content: 'Follow Us';
         margin-right: 15px;
         font-size: 13px;
         font-style: italic;
         color: #C6CBCD;
+
+        @media (max-width: 1188px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.mogo-box__socials-button {
+    @media (max-width: 1188px) {
+        width: 16px;
+        height: 16px;
     }
 }
 
 .mogo-box__email {
-    min-width: 234px;
-    min-height: 55px;
+    width: 234px;
+    height: 55px;
     margin-top: 46px;
     border: 1px solid #C6CBCD;
     background-color: #FFF;
     text-align: center;
     color: #C6CBCD;
+
+    @media (max-width: 1188px) {
+        width: 171px;
+        height: 37px;
+        margin-top: 31px;
+        padding-left: 30px;
+        font-size: 14px;
+        text-align: start;
+    }
 }
 
 ::placeholder {
@@ -82,14 +149,26 @@ footer {
     text-align: center;
     text-transform: uppercase;
     color: #FFF;
+
+    @media (max-width: 1188px) {
+        min-width: 145px;
+        min-height: 37px;
+        font-size: 14px;
+    }
 }
 
 input[type=submit] {
     background-color: #95E1D3;
 }
 
+// Blogs
+
 .blogs-box {
     max-width: 470px;
+
+    @media (max-width: 1188px) {
+        max-width: 392px;
+    }
 }
 
 .blogs-box__title {
@@ -98,17 +177,37 @@ input[type=submit] {
     font-size: 24px;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1188px) {
+        margin-bottom: 26px;
+        font-size: 18px;
+    }
 }
 
 .blogs-box__content {
     display: flex;
     flex-direction: column;
     gap: 21px;
+
+    @media (max-width: 1188px) {
+        gap: 13px;
+    }
 }
 
 .blog-box__card {
     display: flex;
     gap: 30px;
+    
+    @media (max-width: 1188px) {
+        gap: 20px;
+    }
+}
+
+.blog-box__card__picture {
+    @media (max-width: 1188px) {
+        max-width: 115px;
+        max: 71px;
+    }
 }
 
 .blog-box__card__text {
@@ -116,16 +215,32 @@ input[type=submit] {
     font-weight: 700;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1188px) {
+        max-width: 267px;
+        font-size: 14px;
+    }
 }
 
 .blog-box__card__date {
     margin-top: 15px;
     font-size: 13px;
     color: #2D3033;
+
+    @media (max-width: 1188px) {
+        margin-top: 10px;
+        font-size: 12px;
+    }
 }
+
+// Instagram
 
 .instagram-box {
     max-width: 270px;
+
+    @media (max-width: 1188px) {
+        max-width: 223px;
+    }
 }
 
 .instagram-box__title {
@@ -134,12 +249,21 @@ input[type=submit] {
     font-size: 24px;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1188px) {
+        margin-bottom: 26px;
+        font-size: 18px;
+    }
 }
 
 .instagram-box__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 38px;
+
+    @media (max-width: 1188px) {
+        margin-bottom: 10px;
+    }
 }
 
 .instagram-box__link {
@@ -148,7 +272,13 @@ input[type=submit] {
     text-decoration-line: underline;
     color: #2D3033;
     border-bottom: 1px solid #2D3033;
+
+    @media (max-width: 1188px) {
+        font-size: 12px;
+    }
 }
+
+// Copyright
 
 .footer__copyright-separator {
     max-width: 1140px;
@@ -156,6 +286,10 @@ input[type=submit] {
     margin-top: 42px;
     background-color: #C6CBCD;
     margin: 32px auto 22px;
+
+    @media (max-width: 1188px) {
+        margin-top: 35px;
+    }
 }
 
 .footer__copyright-text {
@@ -165,4 +299,8 @@ input[type=submit] {
     text-align: center;
     text-transform: uppercase;
     color: #2D3033;
+
+    @media (max-width: 1188px) {
+        padding-bottom: 13px;
+    }
 }

@@ -1,6 +1,10 @@
 .reviews-1 {
-    padding: 42px 100px;
+    padding: 42px 0;
     background-color: #F8F8F8;
+
+    @media (max-width: 1199px) {
+        padding: 28px 0;
+    }
 }
 
 .carousel__content {
@@ -8,22 +12,42 @@
     padding-left: 160px;
     padding-right: 160px;
     gap: 30px;
+
+    @media (max-width: 1199px) {
+        padding-left: 100px;
+        padding-right: 100px;
+        gap: 37px;
+    }
 }
 
 .carousel-control-next-icon {
     background-image: url('../images/reviews-1-section/arrow-next.svg');
     width: 42px;
     height: 42px;
+
+    @media (max-width: 1199px) {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .carousel-control-prev-icon {
     background-image: url('../images/reviews-1-section/arrow-prev.svg');
     width: 42px;
     height: 42px;
+
+    @media (max-width: 1199px) {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .carousel__picture {
     max-height: 170px;
+
+    @media (max-width: 1199px) {
+        max-height: 115px;
+    }
 }
 
 .carousel__text {
@@ -32,9 +56,21 @@
     font-size: 24px;
     font-style: italic;
     color: #A9AFB1;
+
+    @media (max-width: 1399px) {
+        margin-bottom: 14px;
+    }
+
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
 }
 
 .carousel__name {
     font-family: 'Kaushan Script', sans-serif;
     font-size: 30px;
+
+    @media (max-width: 1199px) {
+        font-size: 24px;
+    }
 }

@@ -1,7 +1,11 @@
 .nav__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px
+    gap: 30px;
+
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
 }
 
 .nav__item {
@@ -13,6 +17,10 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFF;
+
+    @media (max-width: 1024px) {
+        font-size: 13px;
+    }
 
     &:active {
         color: #F4BF87;
