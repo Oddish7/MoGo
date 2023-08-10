@@ -8,6 +8,11 @@
     @media (max-width: 1024px) {
         padding: 29px 0;
     }
+
+    @media (max-width: 420px) {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('../images/map-section/map-bg-mobile.png');
+        padding: 42px 0;
+    }
 }
 
 .map__icon {
@@ -15,9 +20,16 @@
     justify-content: center;
 
     & img {
+        cursor: pointer;
+
         @media (max-width: 1024px) {
             width: 28px;
             height: 28px;
+        }
+
+        @media (max-width: 420px) {
+            width: 42px;
+            height: 42px;
         }
     }
 }
@@ -35,8 +47,16 @@
         margin-top: 10px;
         font-size: 24px;
     }
+
+    @media (max-width: 420px) {
+        margin-top: 25px;
+    }
 }
 
 .map__separator {
     margin-top: 25px !important;
+
+    @media (max-width: 420px) {
+        margin-top: 50px !important;
+    }
 }

@@ -4,4 +4,22 @@
     @media (max-width: 1024px) {
         padding-bottom: 86px;
     }
+
+    @media (max-width: 600px) {
+        padding-bottom: 56px;
+    }
+}
+
+.carousel__content {
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.carousel__img {
+    max-height: 170px;
+
+    @media (max-width: 1199px) {
+        max-height: 115px;
+    }
 }

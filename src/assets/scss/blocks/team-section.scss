@@ -4,6 +4,15 @@
     @media (max-width: 1024px) {
         padding: 58px 16px;
     }
+
+    @media (max-width: 420px) {
+        padding: 29px 16px 58px;
+    }
+
+    @media (max-width: 319px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .team__container {
@@ -19,6 +28,10 @@
 
 .team__card {
     position: relative;
+
+    @media (max-width: 420px) {
+        width: 288px;
+    }
 }
 
 .team__card-overlay {
@@ -30,16 +43,20 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    min-width: 370px;
-    min-height: 424px;
+    width: 370px;
+    height: 424px;
     gap: 2px;
     background: linear-gradient(360deg, rgba(237, 215, 137, 0.90) 0%, rgba(233, 130, 131, 0.90) 100%);
     cursor: pointer;
     transition: .5s;
 
     @media (max-width: 1218px) {
-        min-width: 311px;
-        min-height: 355px;
+        width: 311px;
+        height: 355px;
+    }
+
+    @media (max-width: 420px) {
+        display: none;
     }
 
     &:hover {
@@ -69,6 +86,43 @@
         width: 311px;
         height: 355px;
     }
+
+    @media (max-width: 420px) {
+        display: none;
+    }
+}
+
+.team__card-picture-mobile {
+    display: none;
+
+    @media (max-width: 420px) {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 1px;
+    }
+}
+
+.img-1 {
+    width: 100%;
+    height: 236px;
+    background-image: url('../images/team-section/man-1-mobile.png');
+    background-position: center;
+}
+
+.img-2 {
+    width: 100%;
+    height: 236px;
+    background-image: url('../images/team-section/man-2-mobile.png');
+    background-position: center;
+}
+
+.img-3 {
+    width: 100%;
+    height: 236px;
+    background-image: url('../images/team-section/man-3-mobile.png');
+    background-position: center;
 }
 
 .team__card-name {

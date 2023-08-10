@@ -10,6 +10,8 @@ new Swiper('.swiper', {
     },
 });
 
+
+// Blog buttons
 const donutbtn1 = document.querySelector('.donut-button-1');
 const donutbtn2 = document.querySelector('.donut-button-2');
 const donutbtn3 = document.querySelector('.donut-button-3');
@@ -57,3 +59,29 @@ messagebtn3.addEventListener('click', () => {
     document.querySelector('.message-count-3').innerHTML = messageCount;
 }
 )));
+
+
+// Swiper finger-swipe
+$("#carousel-1").swipe({
+
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+    },
+    allowPageScroll:"vertical"
+
+});
+
+$("#carousel-2").swipe({
+
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+    },
+    allowPageScroll:"vertical"
+
+});

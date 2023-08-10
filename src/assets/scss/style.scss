@@ -14,6 +14,7 @@ $prefix: "mo-";
 
 // Blocks
 @import './blocks/header.scss';
+@import './blocks/burger.scss';
 @import './blocks/nav.scss';
 @import './blocks/slider.scss';
 @import './blocks/pagination.scss';
@@ -84,7 +85,7 @@ p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, ol, ul, li {
 
     @media (max-width: 1024px) {
         margin-top: 39px;
-        max-width: 148px;
+        max-width: 134px;
     }
 }
 
@@ -97,6 +98,14 @@ p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, ol, ul, li {
     @media (max-width: 1199px) {
         width: 47px;
         margin-right: 38px;
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 280px) {
+        margin-right: 0;
     }
 }
 
@@ -111,5 +120,9 @@ p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, ol, ul, li {
         max-width: 979px;
         margin: 34px auto 82px;
         font-size: 14px;
+    }
+
+    @media (max-width: 420px) {
+        margin: 16px auto 28px;
     }
 }

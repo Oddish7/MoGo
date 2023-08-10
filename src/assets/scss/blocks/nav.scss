@@ -1,3 +1,41 @@
+.nav {
+    position: relative;
+
+    @media (max-width: 723px) {
+        position: fixed;
+        inset: 0;
+        justify-content: center;
+        display: none;
+
+        background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.90) 0%, rgba(233, 130, 131, 0.90) 100%), url('../images/nav/nav-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: burgerAnimation .4s;
+
+        &::before {
+            content: url('../images/header/logo-tablet.svg');
+            position: absolute;
+            top: 30px;
+            left: 16px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &::before {
+            content: url('../images/header/logo-mobile.png');
+            position: absolute;
+            top: 30px;
+            left: 16px;
+        }
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
 .nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +43,13 @@
 
     @media (max-width: 1024px) {
         gap: 20px;
+    }
+
+    @media (max-width: 723px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20;
+        padding: 100px 0;
     }
 }
 
@@ -20,6 +65,10 @@
 
     @media (max-width: 1024px) {
         font-size: 13px;
+    }
+
+    @media (max-width: 723px) {
+        font-weight: 700;
     }
 
     &:active {

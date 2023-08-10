@@ -9,6 +9,14 @@
     @media (max-width: 1024px) {
         min-height: 695px;
     }
+
+    @media (max-width: 600px) {
+        min-height: 574px;
+    }
+
+    @media (max-width: 303px) {
+        min-height: 474px;;
+    }
 }
 
 .swiper-wrapper {

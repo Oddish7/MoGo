@@ -5,10 +5,26 @@
     justify-content: center;
     gap: 30px;
     margin-top: 876px;
+    z-index: 1;
 
     @media (max-width: 1024px) {
         margin-top: 589px;
     }
+
+    @media (max-width: 723px) {
+        margin-top: 593px;
+    }
+
+    @media (max-width: 600px) {
+        margin-top: 480px;
+        gap: 20px;
+    }
+
+    @media (max-width: 303px) {
+        margin-top: 400px;
+        gap: 10px;
+    }
+    
 }
 
 .swiper-pagination-bullet {
@@ -32,6 +48,10 @@
         @media (max-width: 1024px) {
             font-size: 24px;
         }
+
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 
     &::after {
@@ -48,6 +68,10 @@
         @media (max-width: 1024px) {
             top: 21px;
             font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            display: none;
         }
     }
 
@@ -86,6 +110,10 @@
 
 .swiper-pagination-bullet-active {
     background: linear-gradient(to right, #F38281 30%, #FFF 30%, #FFF 70%);
+
+    @media (max-width: 600px) {
+        background: #F38281;
+    }
 
     &::before {
         color: #FFF;

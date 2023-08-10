@@ -11,6 +11,14 @@
     <header class="header">
         <div class="header__top">
             <img class="header__top-logo" src="./assets/images/header/logo.svg" alt="picture">
+            <img class="header__top-logo-tablet" src="./assets/images/header/logo-tablet.svg" alt="picture">
+            <img class="header__top-logo-mobile" src="./assets/images/header/logo-mobile.png" alt="picture">
+            <input type="checkbox" id="burgertoogle">
+            <label class="burger-button" for="burgertoogle">
+                <div class="burger-button__line line1"></div>
+                <div class="burger-button__line line2"></div>
+                <div class="burger-button__line line3"></div>
+            </label>
             <nav class="nav">
                 <ul class="nav__list">
                     <a class="nav__link" href="#about">
@@ -78,18 +86,42 @@
             <div class="about__separator line"></div>
             <p class="about__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
             <div class="about__pictures-container">
-                <div class="about__picture about__picture--size picture-1"></div>
-                <div class="about__picture about__picture--size picture-2"></div>
-                <div class="about__picture about__picture--size picture-3"></div>
+                <div class="about__picture about__picture--size picture-1">
+                    <div class="about__mobile-overlay">
+                        <img class="about__mobile-overlay-svg" src="./assets/images/about-section/hover-icon.svg" alt="picture">
+                        <p class="about__mobile-overlay-text">Super team</p>
+                    </div>
+                </div>
+                <div class="about__picture about__picture--size picture-2">
+                    <div class="about__mobile-overlay">
+                        <img class="about__mobile-overlay-svg" src="./assets/images/about-section/hover-icon.svg" alt="picture">
+                        <p class="about__mobile-overlay-text">Super team</p>
+                    </div>
+                </div>
+                <div class="about__picture about__picture--size picture-3">
+                    <div class="about__mobile-overlay">
+                        <img class="about__mobile-overlay-svg" src="./assets/images/about-section/hover-icon.svg" alt="picture">
+                        <p class="about__mobile-overlay-text">Super team</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="features">
-            <div class="features__card features__card--border-left"><span>42</span>Lorem ipsum</p>
+            <div class="features__card features__card--border-left">
+                <span>42</span>Lorem ipsum</p>
             </div>
-            <div class="features__card"><span>123</span><p>Lorem ipsum</p></div>
-            <div class="features__card"><span>15</span><p>Lorem ipsum</p></div>
-            <div class="features__card"><span>99</span><p>Lorem ipsum</p></div>
-            <div class="features__card"><span>24</span><p>Lorem ipsum</p></div>
+            <div class="features__card">
+                <span>123</span><p>Lorem ipsum</p>
+            </div>
+            <div class="features__card">
+                <span>15</span><p>Lorem ipsum</p>
+            </div>
+            <div class="features__card">
+                <span>99</span><p>Lorem ipsum</p>
+            </div>
+            <div class="features__card">
+                <span>24</span><p>Lorem ipsum</p>
+            </div>
         </section>
         <section class="services">
             <h3 class="services__subtitle subtitle">We worck with</h3>
@@ -134,6 +166,7 @@
             <div class="devices__separator line"></div>
             <div class="devices__container">
                 <img class="devices__content" src="./assets/images/devices-section/devices.png" alt="picture">
+                <img class="devices__content-mobile" src="./assets/images/devices-section/devices-mobile.png" alt="picture">
             </div>
         </section>
         <section class="make" id="service">
@@ -143,6 +176,7 @@
             <p class="make__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
             <div class="make__container">
                 <img class="make__picture" src="./assets/images/make-section/man.png" alt="picture">
+                <img class="make__picture-mobile" src="./assets/images/make-section/man-mobile.png" alt="picture">
                 <div class="make__accordion">
                     <div class="make__accordion-item">
                         <input class="make__accordion-input" type="radio" id="accordion-1" name="accordion" checked>
@@ -191,6 +225,13 @@
         <section class="reviews-1">
             <div class="reviews-1__container">
                 <div class="reviews-1__carousel carousel slide" id="carousel-1">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="carousel__content container">
@@ -228,6 +269,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="carousel-item">
+                            <div class="carousel__content container">
+                                <img class="carousel__picture" src="./assets/images/reviews-1-section/message.png" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator small-line"></div>
+                                        <h4 class="carousel__name">Jaydon Rosser</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel__content container">
+                                <img class="carousel__picture" src="./assets/images/reviews-1-section/message.png" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator small-line"></div>
+                                        <h4 class="carousel__name">Davis Rhiel</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -248,34 +313,100 @@
             <div class="team__container">
                 <div class="team__card">
                     <div class="team__card-overlay">
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-facebook.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-twitter.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-printerest.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-instagram.svg" alt="picture"></button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-facebook.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-twitter.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-printerest.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-instagram.svg" alt="picture">
+                        </button>
                     </div>
                     <img class="team__card-picture" src="./assets/images/team-section/man-1.png" alt="picture">
+                    <div class="team__card-picture-mobile img-1">
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-facebook-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-twitter-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-printerest-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-instagram-mobile.svg" alt="picture">
+                        </button>
+                    </div>
                     <h4 class="team__card-name">Kadin Dias</h4>
                     <h5 class="team__card-job">founder, ceo</h5>
                 </div>
                 <div class="team__card">
                     <div class="team__card-overlay">
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-facebook.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-twitter.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-printerest.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-instagram.svg" alt="picture"></button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-facebook.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-twitter.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-printerest.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-instagram.svg" alt="picture">
+                        </button>
                     </div>
                     <img class="team__card-picture" src="./assets/images/team-section/man-2.png" alt="picture">
+                    <div class="team__card-picture-mobile img-2">
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-facebook-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-twitter-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-printerest-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-instagram-mobile.svg" alt="picture">
+                        </button>
+                    </div>
                     <h4 class="team__card-name">Zain Calzoni</h4>
                     <h5 class="team__card-job">designer</h5>
                 </div>
                 <div class="team__card">
                     <div class="team__card-overlay">
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-facebook.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-twitter.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-printerest.svg" alt="picture"></button>
-                        <button class="team__card-social-button"><img src="./assets/images/team-section/social-button-instagram.svg" alt="picture"></button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-facebook.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-twitter.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-printerest.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button">
+                            <img src="./assets/images/team-section/social-button-instagram.svg" alt="picture">
+                        </button>
                     </div>
                     <img class="team__card-picture" src="./assets/images/team-section/man-3.png" alt="picture">
+                    <div class="team__card-picture-mobile img-3">
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-facebook-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-twitter-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-printerest-mobile.svg" alt="picture">
+                        </button>
+                        <button class="team__card-social-button-mobile">
+                            <img src="./assets/images/team-section/social-button-instagram-mobile.svg" alt="picture">
+                        </button>
+                    </div>
                     <h4 class="team__card-name">Charlie George</h4>
                     <h5 class="team__card-job">photographer</h5>
                 </div>
@@ -283,11 +414,17 @@
         </section>
         <section class="partners">
             <div class="partners__container">
+                <img class="partners__logo-mobile" src="./assets/images/partners-section/partner-1-mobile.svg" alt="picture">
+                <img class="partners__logo-mobile" src="./assets/images/partners-section/partner-2-mobile.svg" alt="picture">
+                <img class="partners__logo-mobile" src="./assets/images/partners-section/partner-3-mobile.svg" alt="picture">
+                <img class="partners__logo-mobile" src="./assets/images/partners-section/partner-4-mobile.svg" alt="picture">
+                <img class="partners__logo-mobile" src="./assets/images/partners-section/partner-5-mobile.svg" alt="picture">
+                <img class="partners__logo-mobile" src="./assets/images/partners-section/partner-6-mobile.svg" alt="picture">
                 <img class="partners__logo" src="./assets/images/partners-section/partner-1.svg" alt="picture">
                 <img class="partners__logo" src="./assets/images/partners-section/partner-2.svg" alt="picture">
-                <img class="partners__logo partners__logo--size" src="./assets/images/partners-section/partner-3.svg" alt="picture">
-                <img class="partners__logo partners__logo--size" src="./assets/images/partners-section/partner-4.svg" alt="picture">
-                <img class="partners__logo partners__logo--size" src="./assets/images/partners-section/partner-5.svg" alt="picture">
+                <img class="partners__logo" src="./assets/images/partners-section/partner-3.svg" alt="picture">
+                <img class="partners__logo" src="./assets/images/partners-section/partner-4.svg" alt="picture">
+                <img class="partners__logo" src="./assets/images/partners-section/partner-5.svg" alt="picture">
                 <img class="partners__logo" src="./assets/images/partners-section/partner-6.svg" alt="picture">
             </div>
         </section>
@@ -297,49 +434,49 @@
             <div class="work__separator line"></div>
             <p class="work__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
             <div class="work__container">
-                <div class="work__picture work__picture--size">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
                         <p class="work__overlay-text">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div class="work__picture work__picture--size">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
                         <p class="work__overlay-text">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div class="work__picture work__picture--size grid-row-span-2">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
                         <p class="work__overlay-text">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div class="work__picture work__picture--size">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
                         <p class="work__overlay-text">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div class="work__picture work__picture--size">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
                         <p class="work__overlay-text">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div class="work__picture work__picture--size">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
                         <p class="work__overlay-text">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div class="work__picture work__picture--size">
+                <div class="work__picture">
                     <div class="work__overlay">
                         <img class="work__overlay-icon" src="./assets/images/work-section/work-overlay-icon.svg" alt="picture">
                         <h3 class="work__overlay-title">creatively design</h3>
@@ -351,10 +488,17 @@
         <section class="reviews-2">
             <div class="reviews-2__container">
                 <div class="reviews-2__carousel carousel slide" id="carousel-2">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="carousel__content container">
-                                <img class="carousel__picture" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
+                                <img class="carousel__img" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
                                 <div class="container p-0 d-flex flex-column">
                                     <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
                                     <div class="container p-0 d-flex align-items-center">
@@ -366,7 +510,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="carousel__content container">
-                                <img class="carousel__picture" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
+                                <img class="carousel__img" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
                                 <div class="container p-0 d-flex flex-column">
                                     <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
                                     <div class="container p-0 d-flex align-items-center">
@@ -378,12 +522,36 @@
                         </div>
                         <div class="carousel-item">
                             <div class="carousel__content container">
-                                <img class="carousel__picture" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
+                                <img class="carousel__img" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
                                 <div class="container p-0 d-flex flex-column">
                                     <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
                                     <div class="container p-0 d-flex align-items-center">
                                         <div class="carousel__separator small-line"></div>
                                         <h4 class="carousel__name">Big Mac</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel__content container">
+                                <img class="carousel__img" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator small-line"></div>
+                                        <h4 class="carousel__name">Jaydon Rosser</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel__content container">
+                                <img class="carousel__img" src="./assets/images/reviews-2-section/reviews-2-circle.svg" alt="picture">
+                                <div class="container p-0 d-flex flex-column">
+                                    <p class="carousel__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                                    <div class="container p-0 d-flex align-items-center">
+                                        <div class="carousel__separator small-line"></div>
+                                        <h4 class="carousel__name">Davis Rhiel</h4>
                                     </div>
                                 </div>
                             </div>
@@ -410,6 +578,7 @@
                         <h4 class="clients__card-name">Phillip Culhane</h4>
                         <h5 class="clients__card-job">photographer</h5>
                         <div class="clients__card-separator small-line"></div>
+                        <div class="clients__card-separator-mobile line"></div>
                         <p class="clients__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     </div>
                 </div>
@@ -418,6 +587,7 @@
                         <h4 class="clients__card-name">Paityn Press</h4>
                         <h5 class="clients__card-job">photographer</h5>
                         <div class="clients__card-separator small-line"></div>
+                        <div class="clients__card-separator-mobile line"></div>
                         <p class="clients__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     </div>
                 </div>
@@ -426,6 +596,7 @@
                         <h4 class="clients__card-name">Dulce Gouse</h4>
                         <h5 class="clients__card-job">photographer</h5>
                         <div class="clients__card-separator small-line"></div>
+                        <div class="clients__card-separator-mobile line"></div>
                         <p class="clients__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     </div>
                 </div>
@@ -434,6 +605,7 @@
                         <h4 class="clients__card-name">Zaire Schleifer</h4>
                         <h5 class="clients__card-job">photographer</h5>
                         <div class="clients__card-separator small-line"></div>
+                        <div class="clients__card-separator-mobile line"></div>
                         <p class="clients__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     </div>
                 </div>
@@ -446,6 +618,7 @@
             <div class="blog__container">
                 <div class="blog__card">
                     <img class="blog__card-picture" src="./assets/images/blog-section/blog-img.png" alt="picture">
+                    <img class="blog__card-picture-mobile" src="./assets/images/blog-section/blog-img-mobile.png" alt="picture">
                     <h4 class="blog__card-title">Lorem ipsum dolor sit amet</h4>
                     <p class="blog__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     <div class="blog__card-buttons">
@@ -457,6 +630,7 @@
                 </div>
                 <div class="blog__card">
                     <img class="blog__card-picture" src="./assets/images/blog-section/blog-img.png" alt="picture">
+                    <img class="blog__card-picture-mobile" src="./assets/images/blog-section/blog-img-mobile.png" alt="picture">
                     <h4 class="blog__card-title">Lorem ipsum dolor sit amet</h4>
                     <p class="blog__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     <div class="blog__card-buttons">
@@ -468,6 +642,7 @@
                 </div>
                 <div class="blog__card">
                     <img class="blog__card-picture" src="./assets/images/blog-section/blog-img.png" alt="picture">
+                    <img class="blog__card-picture-mobile" src="./assets/images/blog-section/blog-img-mobile.png" alt="picture">
                     <h4 class="blog__card-title">Lorem ipsum dolor sit amet</h4>
                     <p class="blog__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
                     <div class="blog__card-buttons">
@@ -512,24 +687,27 @@
                 <h3 class="blogs-box__title">blogs</h3>
                 <div class="blogs-box__content">
                     <div class="blog-box__card">
-                        <img class="blog-box__card__picture" src="./assets/images/footer/blogs-box/blog-1.png" alt="picture">
+                        <img class="blog-box__card-picture" src="./assets/images/footer/blogs-box/blog-1.png" alt="picture">
+                        <img class="blog-box__card-picture-mobile" src="./assets/images/footer/blogs-box/blog-1-mobile.png" alt="picture">
                         <div>
-                            <p class="blog-box__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="blog-box__card__date">jan.9.22.15</p>
+                            <p class="blog-box__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="blog-box__card-date">jan.9.22.15</p>
                         </div>
                     </div>
                     <div class="blog-box__card">
-                        <img class="blog-box__card__picture" src="./assets/images/footer/blogs-box/blog-2.png" alt="picture">
+                        <img class="blog-box__card-picture" src="./assets/images/footer/blogs-box/blog-2.png" alt="picture">
+                        <img class="blog-box__card-picture-mobile" src="./assets/images/footer/blogs-box/blog-2-mobile.png" alt="picture">
                         <div>
-                            <p class="blog-box__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="blog-box__card__date">jan.9.22.15</p>
+                            <p class="blog-box__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="blog-box__card-date">jan.9.22.15</p>
                         </div>
                     </div>
                     <div class="blog-box__card">
-                        <img class="blog-box__card__picture" src="./assets/images/footer/blogs-box/blog-3.png" alt="picture">
+                        <img class="blog-box__card-picture" src="./assets/images/footer/blogs-box/blog-3.png" alt="picture">
+                        <img class="blog-box__card-picture-mobile" src="./assets/images/footer/blogs-box/blog-3-mobile.png" alt="picture">
                         <div>
-                            <p class="blog-box__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="blog-box__card__date">jan.9.22.15</p>
+                            <p class="blog-box__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="blog-box__card-date">jan.9.22.15</p>
                         </div>
                     </div>
                 </div>

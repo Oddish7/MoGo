@@ -1,0 +1,53 @@
+#burgertoogle,
+.burger-button {
+    display: none;
+}
+
+.burger-button {
+    position: relative;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    margin-right: 15px;
+
+    @media (max-width: 723px) {
+        display: flex;
+        z-index: 3;
+    }
+}
+
+.burger-button__line {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+}
+
+#burgertoogle:checked + .burger-button .burger-button__line {
+    position: absolute;
+    top: 8px;
+}
+
+#burgertoogle:checked + .burger-button .line2 {
+    display: none;
+}
+
+#burgertoogle:checked + .burger-button .line1 {
+    transform: rotate(45deg);
+    transition: .1s ease-in-out;
+}
+
+#burgertoogle:checked + .burger-button .line3 {
+    transform: rotate(135deg);
+    transition: .1s ease-in-out;
+}
+
+#burgertoogle:checked ~ .nav {
+    display: flex;
+}
+
+#burgertoogle:checked ~ .burger-button {
+    position: fixed;
+    right: 15px;
+}

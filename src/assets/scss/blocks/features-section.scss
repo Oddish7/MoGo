@@ -2,7 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 16px;
     background: #95E1D3;
+
+    @media (max-width: 319px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .features__card {
@@ -18,14 +24,48 @@
     font-size: 24px;
     color: #FFF;
 
-    @media (max-width: 1188px) {
-        min-width: 198px;
+    @media (max-width: 1218px) {
+        min-width: 190px;
         min-height: 166px;
         font-size: 18px;
     }
 
+    @media (max-width: 428px) {
+        min-width: 135px;
+        min-height: 124px;
+    }
+
+    @media (max-width: 998px) {
+        border-right: 0;
+        border-bottom: 1px solid #FFF;
+
+        &:nth-child(5) {
+            border-bottom: 0;
+        }
+    }
+
+    @media (max-width: 808px) {
+        &:nth-child(4) {
+            border-bottom: 0;
+        }
+    }
+
+    @media (max-width: 618px) {
+        &:nth-child(4) {
+            border-bottom: 1px solid #FFF;
+        }
+    }
+
     &--border-left {
         border-left: 1px solid #FFF;
+
+        @media (max-width: 998px) {
+            border-left: 0;
+        }
+    }
+
+    @media (max-width: 151px) {
+        min-width: 130px;
     }
 
     & span {
